@@ -1,12 +1,12 @@
-Sales Trend Analysis using SQL
+**Sales Trend Analysis using SQL**
 
-1. Project Objective:
+**1. Project Objective:**
 	The goal of this project is to perform a time-series analysis of a sales dataset. The analysis focuses on aggregating raw order data into monthly summaries to identify trends, seasonality, and key performance indicators (KPIs). The primary metrics analyzed are monthly revenue, order volume, average sale value, and cumulative growth.
 
 This project serves as a practical exercise in using SQL for data aggregation, transformation, and analysis, particularly with MySQL.
 
 
-2. Dataset:
+**2. Dataset:**
 
 Name: Superstore Sales Dataset
 
@@ -17,7 +17,7 @@ Format: CSV (Superstore_sales.csv)
 Description: The dataset contains detailed, record-level sales data for a fictional superstore, including order dates, product information, sales figures, and profit.
 
 
-3. Tools and Prerequisites:
+**3. Tools and Prerequisites:**
 
 Database: MySQL Server (Version 8.0 or later)
 
@@ -26,7 +26,7 @@ SQL Client: MySQL Workbench or any standard command-line or GUI-based SQL client
 Data File: Superstore_sales.csv must be downloaded and available.
 
 
-4. Database Setup and Data Loading:
+**4. Database Setup and Data Loading:**
 
 This project utilizes the LOAD DATA INFILE command in MySQL for efficient data ingestion. The following steps detail the entire process from database creation to successful data loading.
 
@@ -53,7 +53,7 @@ Load the date columns into temporary user variables.
 Use the SET clause along with the STR_TO_DATE() function to convert the date strings from the source format (DD-MM-YYYY) into MySQL's standard DATE format before inserting them into the table.
 
 
-5. SQL Analysis Scripts:
+**5. SQL Analysis Scripts:**
 
 5.1: Basic Monthly Trend Analysis
 To perform the core analysis, execute a SQL query that groups the data by month. This query should:
@@ -82,7 +82,7 @@ The value of the highest single sale for the month using MAX().
 A cumulative, or running, total of revenue across all months by using a SUM() OVER (...) window function.
 
 
-6. Findings and Interpretation:
+**6. Findings and Interpretation:**
 
 The execution of the analysis scripts produces a summarized monthly report. This report enables an analyst to:
 
@@ -93,6 +93,7 @@ Track Growth: Monitor the change in total revenue and order volume over time. Th
 Analyze Customer Behavior: Observe trends in the average sale value to see if customers are spending more or less per transaction over time.
 
 Monitor Product Volume: Use the total items sold and unique products sold to understand if growth is driven by selling more items or a wider variety of items.
+
 
 
 
